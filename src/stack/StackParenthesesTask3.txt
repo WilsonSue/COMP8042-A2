@@ -1,3 +1,5 @@
+import src.stack.Surface;
+
 public final class Tools extends JPanel implements ActionListener,
         ChangeListener, Runnable {
     private final DemoInstVarsAccessor demoInstVars;
@@ -79,7 +81,7 @@ public final class Tools extends JPanel implements ActionListener,
         compositeB = addTool("C", "Composite " + s, this);
 
         Image printBImg = DemoImages.getImage("print.gif", this);
-        printB = addTool(printBImg, "Print the Surface", this);
+        printB = addTool(printBImg, "Print the src.stack.Surface", this);
 
         if (surface instanceof AnimatingSurface) {
             Image stopImg = DemoImages.getImage("stop.gif", this);

@@ -1,3 +1,5 @@
+package src.stack;
+
 public abstract class Surface extends JPanel implements Printable {
 
     public Object AntiAlias = VALUE_ANTIALIAS_ON;
@@ -227,7 +229,7 @@ public abstract class Surface extends JPanel implements Printable {
         return g2;
     }
 
-    // ...demos that extend Surface must implement this routine...
+    // ...demos that extend src.stack.Surface must implement this routine...
     public abstract void render(int w, int h, Graphics2D g2);
 
     /**
